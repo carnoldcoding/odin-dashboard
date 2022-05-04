@@ -25,6 +25,7 @@ $standard-font: 'Open Sans', sans-serif;
         border: 1px solid black;
         //Dashboard
         &:nth-child(1){
+            user-select: none;
             padding: 2rem;
             grid-column: 1/2;
             grid-row: 1/6;
@@ -69,6 +70,13 @@ $standard-font: 'Open Sans', sans-serif;
                         min-height: 30px;
                         min-width: 30px;
                         max-width: 30px;
+
+                        transition: transform .1s ease;
+
+                        &:hover{
+                            transform: scale(1.25);
+                            cursor: pointer;
+                        }
                     }
                     .text{
                         flex-basis: 70%;
@@ -77,6 +85,11 @@ $standard-font: 'Open Sans', sans-serif;
                         font-weight: 600;
                         letter-spacing: normal;
                         font-size: 1.2rem;
+
+                        &:hover{
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
                     }
                 }
             }

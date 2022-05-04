@@ -6,7 +6,7 @@
 }
 
 $primary-color: rgb(230, 230, 230);
-$secondary-color: rgb(1, 118, 214);
+$secondary-color: rgb(70, 162, 238);
 
 
 $primary-text-color: black;
@@ -30,42 +30,54 @@ $standard-font: 'Open Sans', sans-serif;
             grid-row: 1/6;
             background: $secondary-color;
             grid-template-rows: 50px 200px;
-            gap: 50px;
 
             display: grid;
+            gap: 50px;
 
-            .dashboard{
-                color: $secondary-text-color;
-                font-weight: 600;
-                display: grid;
-                grid-template-columns: 1fr 5fr;
-                gap: 1rem;
-                font-size: 2rem;
-
-                .item{
-                    &-icon{
-                        height: 100%;
-                        width: 100%;
-                        min-width: 50px;
-                        background: url('./assets/view-dashboard.png') no-repeat;
-                        background-size: cover;
-                        background-position: center;
-                    }
+            .header{
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                .icon{
+                    flex-basis: 30%;
+                    max-height: 40px;
+                    min-height: 40px;
+                    min-width: 40px;
+                    max-width: 40px;
+                }
+                .text{
+                    flex-basis: 70%;
+                    font-family: $standard-font;
+                    color: $secondary-text-color;
+                    font-weight: 600;
+                    letter-spacing: normal;
+                    font-size: 1.5rem;
                 }
             }
 
-            .sidebar-items{
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(2, 30px);
-                color: $secondary-text-color;
-                font-weight: 600;
-                font-size: 1.25rem;
-                gap: .5rem;
-                
+            .items{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
                 .item{
                     display: flex;
+                    align-items: center;
                     gap: 1rem;
+                    .icon{
+                        flex-basis: 30%;
+                        max-height: 30px;
+                        min-height: 30px;
+                        min-width: 30px;
+                        max-width: 30px;
+                    }
+                    .text{
+                        flex-basis: 70%;
+                        font-family: $standard-font;
+                        color: $secondary-text-color;
+                        font-weight: 600;
+                        letter-spacing: normal;
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }

@@ -6,7 +6,7 @@
 }
 
 $primary-color: rgb(230, 230, 230);
-$secondary-color: rgb(1, 118, 214);
+$secondary-color: rgb(70, 162, 238);
 
 
 $primary-text-color: black;
@@ -25,7 +25,58 @@ $standard-font: 'Open Sans', sans-serif;
         border: 1px solid black;
         //Dashboard
         &:nth-child(1){
-            
+            padding: 2rem;
+            grid-column: 1/2;
+            grid-row: 1/6;
+            background: $secondary-color;
+            grid-template-rows: 50px 200px;
+
+            display: grid;
+            gap: 50px;
+
+            .header{
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                .icon{
+                    flex-basis: 30%;
+                    max-height: 40px;
+                    min-height: 40px;
+                    min-width: 40px;
+                    max-width: 40px;
+                }
+                .text{
+                    flex-basis: 70%;
+                    font-family: $standard-font;
+                    color: $secondary-text-color;
+                    font-weight: 600;
+                    letter-spacing: normal;
+                    font-size: 1.5rem;
+                }
+            }
+
+            .items{
+                .item{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    .icon{
+                        flex-basis: 30%;
+                        max-height: 30px;
+                        min-height: 30px;
+                        min-width: 30px;
+                        max-width: 30px;
+                    }
+                    .text{
+                        flex-basis: 70%;
+                        font-family: $standard-font;
+                        color: $secondary-text-color;
+                        font-weight: 600;
+                        letter-spacing: normal;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
         }
 
         //Top Bar

@@ -25,49 +25,7 @@ $standard-font: 'Open Sans', sans-serif;
         border: 1px solid black;
         //Dashboard
         &:nth-child(1){
-            padding: 2rem;
-            grid-column: 1/2;
-            grid-row: 1/6;
-            background: $secondary-color;
-            grid-template-rows: 50px 200px;
-            gap: 50px;
-
-            display: grid;
-
-            .dashboard{
-                color: $secondary-text-color;
-                font-weight: 600;
-                display: grid;
-                grid-template-columns: 1fr 5fr;
-                gap: 1rem;
-                font-size: 2rem;
-
-                .item{
-                    &-icon{
-                        height: 100%;
-                        width: 100%;
-                        min-width: 50px;
-                        background: url('./assets/view-dashboard.png') no-repeat;
-                        background-size: cover;
-                        background-position: center;
-                    }
-                }
-            }
-
-            .sidebar-items{
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(2, 30px);
-                color: $secondary-text-color;
-                font-weight: 600;
-                font-size: 1.25rem;
-                gap: .5rem;
-                
-                .item{
-                    display: flex;
-                    gap: 1rem;
-                }
-            }
+            
         }
 
         //Top Bar

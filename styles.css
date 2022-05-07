@@ -24,6 +24,14 @@
   display: grid;
   gap: 50px;
 }
+@media screen and (max-width: 750px) {
+  .container .cell:nth-child(1) .header > .text {
+    display: none;
+  }
+  .container .cell:nth-child(1) .items > .item > .text {
+    display: none;
+  }
+}
 .container .cell:nth-child(1) .header {
   display: flex;
   align-items: center;

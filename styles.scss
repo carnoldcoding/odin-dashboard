@@ -35,6 +35,15 @@ $standard-font: 'Open Sans', sans-serif;
             display: grid;
             gap: 50px;
 
+            @media screen and (max-width: 750px) {
+                .header > .text{
+                    display: none;
+                }
+                .items > .item > .text{
+                    display: none;
+                }
+            }
+
             .header{
                 display: flex;
                 align-items: center;
